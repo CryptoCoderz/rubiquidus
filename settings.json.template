@@ -5,12 +5,12 @@
 */
 {
   // name your instance!
-  "title": "RUBIQUIDUS",
+  "title": "Rubix RBX Explorer",
 
   "address": "127.0.0.1:80",
 
   // coin name
-  "coin": "Rubix",
+  "coin": "Rubix RBX",
 
   // coin symbol
   "symbol": "RBX",
