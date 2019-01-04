@@ -60,7 +60,7 @@
 
   // menu settings
   "display": {
-    "api": false,
+    "api": true,
     "markets": false,
     "richlist": true,
     "twitter": false,
@@ -84,10 +84,10 @@
 
   // ensure links on API page are valid
   "api": {
-    "blockindex": 50,
-    "blockhash": "",
-    "txhash": "",
-    "address": ""
+    "blockindex": 0,
+    "blockhash": "00001162af4b590b81270287faf239153aab5195279dd72147e5cc5438cb8b3e",
+    "txhash": "6f05b593558f5b7e7218f90806ecb9cd44f1dc2d3ffbccbb273c0ae445c4505d",
+    "address": "RmG7TTPEJDhNAvK4jy2oShizc8WmeF7pKH"
   },
 
   // market settings
