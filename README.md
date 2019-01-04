@@ -1,13 +1,13 @@
-Rubiquidus Alpha - 1.7.2
+Rubiquidus Alpha - 1.7.3
 ================
 
-The Chaincoin block explorer.
+The Rubix block explorer.
 
 This project is a fork of [Iquidus Explorer](https://github.com/iquidus/explorer) so massive thanks go out to Luke Williams for his code! Thank you!!!
 
 ### See it in action
 
-*  [explorer.chaincoin.org](https://explorer.chaincoin.org)
+*  [rbx.blockcrawlers.xyz](https://rbx.blockcrawlers.xyz)
 
 
 ### Requires
@@ -103,8 +103,7 @@ The wallet connected to Rubiquidus must be running with atleast the following fl
     -daemon -txindex
 
 ### Donate
-    
-    CHC: CLkWg5YSLod772uLzsFRxHgHiWVGAJSezm
+
     BTC: 1J8Chi5teDJrvBtSuQhioNCHfTNBCcCrPx
 
 ### Known Issues
@@ -135,7 +134,7 @@ Where [SIZE] is an integer higher than the default.
 
 ### License
 
-Copyright (c) 2017, The Chaincoin Community  
+Copyright (c) 2017, The Rubix Community  
 Copyright (c) 2015, Iquidus Technology  
 Copyright (c) 2015, Luke Williams  
 All rights reserved.

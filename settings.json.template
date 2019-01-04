@@ -7,16 +7,16 @@
   // name your instance!
   "title": "RUBIQUIDUS",
 
-  "address": "127.0.0.1:3001",
+  "address": "127.0.0.1:80",
 
   // coin name
-  "coin": "Chaincoin",
+  "coin": "Rubix",
 
   // coin symbol
-  "symbol": "CHC",
+  "symbol": "RBX",
 
   // logo
-  "logo": "/images/chain_dark-128x128.png",
+  "logo": "/images/rubix-128x128.png",
 
   // favicon
   "favicon": "public/favicon.ico",
@@ -26,10 +26,10 @@
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Slate",
+  "theme": "Darkly",
 
   // port to listen for requests on.
-  "port" : 3001,
+  "port" : 80,
 
   // database settings (MongoDB)
   "dbsettings": {
@@ -47,29 +47,29 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 11995,
-    "user": "chaincoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 20167,
+    "user": "rubixrpc",
+    "pass": "SomeOtherWorldlyPasswordGoesHere1"
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 90,
 
   // language settings
   "locale": "locale/en.json",
 
   // menu settings
   "display": {
-    "api": true,
-    "markets": true,
+    "api": false,
+    "markets": false,
     "richlist": true,
-    "twitter": true,
+    "twitter": false,
     "facebook": false,
     "googleplus": false,
-    "bitcointalk": false,
+    "bitcointalk": true,
     "website": false,
     "slack": false,
-    "github": false,
+    "github": true,
     "search": true,
     "movement": true,
     "network": true
@@ -78,29 +78,29 @@
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
     "show_hashrate": true,
-    "difficulty": "POW",
+    "difficulty": "Hybrid",
     "last_txs": 100
   },
 
   // ensure links on API page are valid
   "api": {
-    "blockindex": 1337,
-    "blockhash": "00000000001b8c30360db57b575b3c2bf668b0ed50683f567afd47ae1773efb8",
-    "txhash": "285feead54e322aa69f649c4078766171df358a12f5f1517d61f303780e25511",
-    "address": "CaxX1HVWzbQ516w61XbtHR63vNmp2mvLMZ"
+    "blockindex": 50,
+    "blockhash": "",
+    "txhash": "",
+    "address": ""
   },
 
   // market settings
   //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex, coinexchange
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "CHC",
+    "coin": "RBX",
     "exchange": "BTC",
-    "enabled": ["cryptopia"],
-    "cryptopia_id": "2186",
+    "enabled": ["coinexchange"],
+    "cryptopia_id": "0",
     "ccex_key" : "Get-Your-Own-Key",
-    "coinexchange_id": "18",
-    "default": "cryptopia"
+    "coinexchange_id": "0",
+    "default": "coinexchange"
   },
 
   // richlist/top100 settings
@@ -115,22 +115,22 @@
   // high flag: greater than this value flagged red
   "movement": {
     "min_amount": 100,
-    "low_flag": 1000,
-    "high_flag": 5000
+    "low_flag": 10000,
+    "high_flag": 500000
   },
 
   // twitter, facebook, googleplus, bitcointalk, github, slack, website
-  "twitter": "suprnurd",
+  "twitter": "rubixblockchain",
   "facebook": "yourfacebookpage",
   "googleplus": "yourgooglepluspage",
-  "bitcointalk": "yourbitcointalktopicvalue",
-  "github": "yourgithubusername/yourgithubrepo",
+  "bitcointalk": "3127980.0",
+  "github": "SaltineChips/Rubix",
   "slack": "yourfullslackinviteurl",
   "website": "yourfullwebsiteurl",
 
   //genesis
-  "genesis_tx": "fa6ef9872494fa9662cf0fecf8c0135a6932e76d7a8764e1155207f3205c7c88",
-  "genesis_block": "00000f639db5734b2b861ef8dbccc33aebd7de44d13de000a12d093bcc866c64",
+  "genesis_tx": "6f05b593558f5b7e7218f90806ecb9cd44f1dc2d3ffbccbb273c0ae445c4505d",
+  "genesis_block": "00001162af4b590b81270287faf239153aab5195279dd72147e5cc5438cb8b3e",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -156,7 +156,7 @@
 
   // nethash unitd: sets nethash API return units
   // valid options: "P" (PH/s), "T" (TH/s), "G" (GH/s), "M" (MH/s), "K" (KH/s)
-  "nethash_units": "G",
+  "nethash_units": "M",
 
   // Address labels
   // example : "CGTta3M4t3yXu8uRgkKvaWd2d8DQvDPnpL": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}

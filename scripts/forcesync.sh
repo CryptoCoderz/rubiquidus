@@ -4,9 +4,9 @@ forcesync() {
   blockcount=$1
   echo "╒══════════════════<<"
   echo "| height : $blockcount"
-  blockhash=`curl -s https://explorer.chaincoin.org/api/getblockhash?height=$blockcount`
+  blockhash=`curl -s https://rbx.blockcrawlers.xyz/api/getblockhash?height=$blockcount`
   echo "| ଓ hash : $blockhash"
-  curl -s https://explorer.chaincoin.org/block/$blockhash > /dev/null
+  curl -s https://rbx.blockcrawlers.xyz/block/$blockhash > /dev/null
   echo "╘═══════════════════════════════>>"
 }
 
