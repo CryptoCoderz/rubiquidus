@@ -10,13 +10,13 @@
   "address": "127.0.0.1:80",
 
   // coin name
-  "coin": "Rubix RBX",
+  "coin": "Rubix",
 
   // coin symbol
   "symbol": "RBX",
 
   // logo
-  "logo": "/images/rubix-128x128.png",
+  "logo": "/images/logo.png",
 
   // favicon
   "favicon": "public/favicon.ico",
@@ -53,7 +53,7 @@
   },
 
   // confirmations
-  "confirmations": 90,
+  "confirmations": 40,
 
   // language settings
   "locale": "locale/en.json",
@@ -66,10 +66,7 @@
     "twitter": false,
     "facebook": false,
     "googleplus": false,
-    "bitcointalk": true,
-    "website": false,
-    "slack": false,
-    "github": true,
+    "youtube": false,
     "search": true,
     "movement": true,
     "network": true
@@ -78,29 +75,28 @@
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
     "show_hashrate": true,
-    "difficulty": "Hybrid",
+    "difficulty": "POW",
     "last_txs": 100
   },
 
   // ensure links on API page are valid
   "api": {
     "blockindex": 0,
-    "blockhash": "00001162af4b590b81270287faf239153aab5195279dd72147e5cc5438cb8b3e",
-    "txhash": "6f05b593558f5b7e7218f90806ecb9cd44f1dc2d3ffbccbb273c0ae445c4505d",
-    "address": "RmG7TTPEJDhNAvK4jy2oShizc8WmeF7pKH"
+    "blockhash": "1733320247b15ca2262be646397d1ffd6be953fa638ebb8f5dcbb4c2b91b34f1",
+    "txhash": "f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e",
+    "address": "RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb"
   },
 
   // market settings
-  //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex, coinexchange
+  //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex
   //default market is loaded by default and determines last price in header
   "markets": {
     "coin": "RBX",
     "exchange": "BTC",
-    "enabled": ["coinexchange"],
+    "enabled": ["bittrex"],
     "cryptopia_id": "0",
     "ccex_key" : "Get-Your-Own-Key",
-    "coinexchange_id": "0",
-    "default": "coinexchange"
+    "default": "bittrex"
   },
 
   // richlist/top100 settings
@@ -115,18 +111,15 @@
   // high flag: greater than this value flagged red
   "movement": {
     "min_amount": 100,
-    "low_flag": 10000,
-    "high_flag": 500000
+    "low_flag": 1000,
+    "high_flag": 5000
   },
 
-  // twitter, facebook, googleplus, bitcointalk, github, slack, website
-  "twitter": "rubixblockchain",
+  // twitter, facebook, googleplus, youtube
+  "twitter": "rubiquidus",
   "facebook": "yourfacebookpage",
   "googleplus": "yourgooglepluspage",
-  "bitcointalk": "3127980.0",
-  "github": "SaltineChips/Rubix",
-  "slack": "yourfullslackinviteurl",
-  "website": "yourfullwebsiteurl",
+  "youtube": "youryoutubechannel",
 
   //genesis
   "genesis_tx": "6f05b593558f5b7e7218f90806ecb9cd44f1dc2d3ffbccbb273c0ae445c4505d",
@@ -147,7 +140,7 @@
   // HEAVY: retreive from heavys getsupply api call
   // BALANCES : total of all address balances
   // TXOUTSET : retreive from gettxoutsetinfo api call
-  "supply": "TXOUTSET",
+  "supply": "COINBASE",
 
   // how to acquire network hashrate
   // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
@@ -159,12 +152,12 @@
   "nethash_units": "M",
 
   // Address labels
-  // example : "CGTta3M4t3yXu8uRgkKvaWd2d8DQvDPnpL": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}
+  // example : "JhbrvAmM7kNpwA6wD5KoAsbtikLWWMNPcM": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}
   // label (required) = test to display
   // type (optional) = class of label, valid types: default, primary, warning, danger, success
   // url (optional) = url to link to for more information
   "labels": {
-  //  "CLkWg5YSLod772uLzsFRxHgHiWVGAJSezm": {"label": "Donation Address", "type":"primary", "url":"http://example.com"},
-  //  "CaxX1HVWzbQ516w61XbtHR63vNmp2mvLMZ": {"label": "Max Lee War Chest"}
+  //  "JSoEdU717hvz8KQVq2HfcqV9A79Wihzusu": {"label": "Developers address", "type":"primary", "url":"http://example.com"},
+  //  "JSWVXHWeYNknPdG9uDrcBoZHztKMFCsndw": {"label": "Cryptsy"}
   }
 }

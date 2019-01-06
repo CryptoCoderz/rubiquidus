@@ -1,14 +1,20 @@
-Rubiquidus Alpha - 1.7.3
+Rubiquidus Explorer - 1.6.1
 ================
 
-The Rubix block explorer.
-
-This project is a fork of [Iquidus Explorer](https://github.com/iquidus/explorer) so massive thanks go out to Luke Williams for his code! Thank you!!!
+An open source block explorer written in node.js.
 
 ### See it in action
 
-*  [rbx.blockcrawlers.xyz](https://rbx.blockcrawlers.xyz)
+*  [Deutsche eMark](http://b.emark.tk/)
+*  [Sphere](http://sphere.rubiquidus.io)
+*  [Vertcoin](http://explorer.vertcoin.info/)
+*  [Vivo](http://vivo.explorerz.top:3003)
+*  [Florincoin](https://florincoin.info/info)
+*  [Maxcoin Explorer 1](https://explorer.maxcoinproject.net/)
+*  [Maxcoin Explorer 2](https://explorer2.maxcoinproject.net/)
 
+
+*note: If you would like your instance mentioned here contact me*
 
 ### Requires
 
@@ -94,17 +100,16 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
     */2 * * * * cd /path/to/explorer && /usr/bin/nodejs scripts/sync.js market > /dev/null 2>&1
     */5 * * * * cd /path/to/explorer && /usr/bin/nodejs scripts/peers.js > /dev/null 2>&1
 
-forcesync.sh and forcesynclatest.sh (located in scripts/) can be used to force the explorer to sync at the specified block heights
-
 ### Wallet
 
-The wallet connected to Rubiquidus must be running with atleast the following flags:
+Rubiquidus Explorer is intended to be generic so it can be used with any wallet following the usual standards. The wallet must be running with atleast the following flags
 
     -daemon -txindex
 
 ### Donate
 
-    BTC: 1J8Chi5teDJrvBtSuQhioNCHfTNBCcCrPx
+    BTC: 168hdKA3fkccPtkxnX8hBrsxNubvk4udJi
+    RBX: JZp9893FMmrm1681bDuJBU7c6w11kyEY7D
 
 ### Known Issues
 
@@ -134,8 +139,7 @@ Where [SIZE] is an integer higher than the default.
 
 ### License
 
-Copyright (c) 2017, The Rubix Community  
-Copyright (c) 2015, Iquidus Technology  
+Copyright (c) 2015, Rubiquidus Technology  
 Copyright (c) 2015, Luke Williams  
 All rights reserved.
 
@@ -149,7 +153,7 @@ modification, are permitted provided that the following conditions are met:
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.
 
-* Neither the name of Iquidus Technology nor the names of its
+* Neither the name of Rubiquidus Technology nor the names of its
   contributors may be used to endorse or promote products derived from
   this software without specific prior written permission.
 
